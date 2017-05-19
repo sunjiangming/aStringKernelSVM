@@ -1,0 +1,9 @@
+This is a revised version of string kernel coming from LIBSVM
+The string kernel is calculated base on a combination of edit distance and hamming distance
+D = w*Dedit + (1-w)*Dhamming
+where w is weight varying from 0 to 1
+
+Example of train: svm-train [options] -t 5 -x 0.7 train.dat train.model
+Example of test: svm-predict [options] -x 0.7 test.dat train.model test.predict.rst
+
+see more in README.string
